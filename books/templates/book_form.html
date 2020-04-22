@@ -1,0 +1,6 @@
+<h2>Index new Book</h2>
+<form method="POST" >{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+<a href="{% url 'search_direct' %}" >Search</a>
